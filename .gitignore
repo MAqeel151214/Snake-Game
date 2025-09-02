@@ -1,0 +1,7 @@
+# .gitignore for Java Snake Game
+*.class
+highscore.txt
+.DS_Store
+*.log
+.idea/
+.vscode/

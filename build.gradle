@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'snake_game'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Add dependencies here
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src/main/java']
+        }
+    }
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'snake_game.Snake'
+    }
+}
