@@ -6,8 +6,8 @@ A classic Snake game implemented in Java using Swing. Features:
 - Start/restart screens
 - Colorful graphics
 
-## Structure
-- `GamePanel.java`: Main game logic and rendering
+## Structure of the code
+- `GamePanel.java`: Main game logic and rendering.
 - `GameFrame.java`: Window setup and event handling
 - `Snake.java`: Entry point
 - `highscore.txt`: High score persistence (created automatically)
