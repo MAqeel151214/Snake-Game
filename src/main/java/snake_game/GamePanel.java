@@ -128,10 +128,12 @@ public class GamePanel extends JPanel implements ActionListener {
         g.drawString("SNAKE GAME", (GameState.SCREEN_WIDTH - metrics.stringWidth("SNAKE GAME")) / 2, GameState.SCREEN_HEIGHT / 3);
 
         g.setFont(new Font("Arial", Font.PLAIN, 30));
-        g.drawString("Press SPACE or START", (GameState.SCREEN_WIDTH - metrics.stringWidth("Press SPACE or START")) / 2, GameState.SCREEN_HEIGHT / 2);
+        FontMetrics metrics2 = getFontMetrics(g.getFont());
+        g.drawString("Press SPACE or START", (GameState.SCREEN_WIDTH - metrics2.stringWidth("Press SPACE or START")) / 2, GameState.SCREEN_HEIGHT / 2);
 
         g.setFont(new Font("Arial", Font.PLAIN, 20));
-        g.drawString("High Score: " + state.highScore, (GameState.SCREEN_WIDTH - metrics.stringWidth("High Score: " + state.highScore)) / 2, 2 * GameState.SCREEN_HEIGHT / 3);
+        FontMetrics metrics3 = getFontMetrics(g.getFont());
+        g.drawString("High Score: " + state.highScore, (GameState.SCREEN_WIDTH - metrics3.stringWidth("High Score: " + state.highScore)) / 2, 2 * GameState.SCREEN_HEIGHT / 3);
     }
 
     public void drawGame(Graphics2D g) {
